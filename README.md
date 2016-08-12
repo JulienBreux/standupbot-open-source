@@ -63,6 +63,20 @@ Messaging tools like Slack changed our work world. Standup changed our meetings.
 
 > Be really careful when assigning the Bot username and Api Token, the app won't work if one of them is incorrect.
 
+#### Docker Setup (After Slack Setup):
+
+##### First time
+  * Copy environment file
+    * `cp .env.dist .env`
+  * Run database container (first terminal)
+    * `docker-compose up db`
+  * Run database creation and migration (second terminal)
+    * `docker-compose run web bundle exec rake db:create db:migrate`
+
+##### Run db, web and worker
+  * Run all services
+    * `docker-compose up`
+
 
 #### Commands:
   * `-skip`  Skips your turn until the end of standup.
