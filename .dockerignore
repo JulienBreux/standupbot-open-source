@@ -1,0 +1,14 @@
+.bundle/
+spec/
+log/*
+!log/.keep
+/tmp
+.env
+.rspec
+.travis.yml
+.DS_Store
+docker-compose.yml
+Dockerfile
+Procfile
+LICENSE
+README.md
