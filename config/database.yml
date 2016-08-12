@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: fetch_bot_production
-  username: fetch_bot
-  password: <%= ENV['FETCH_BOT_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
