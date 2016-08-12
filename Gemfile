@@ -22,7 +22,6 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'slack-ruby-client'
-gem 'celluloid-io'
 
 gem 'dotenv-rails', :groups => [:development, :test]
 
@@ -62,4 +61,3 @@ group :test do
   gem 'faker'
   gem 'factory_girl_rails'
 end
-
